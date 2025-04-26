@@ -9,6 +9,6 @@ class coffee(Drink):
         self.type = type
         super().__init__(price = self.price.get(type, 1))
     def drink(self):
-        print(f"un bon cafe de {self.type} qui coute {self.price}$ pour me reveiller !")
+        print(f"un bon cafe {self.type} qui coute {self.price}$ pour me reveiller !")
 coffee = coffee("simple")
 boire = coffee.drink()
